@@ -36,7 +36,7 @@ s.version='2.6.0'
   s.subspec 'Core' do |core|
     core.vendored_frameworks = 'LSUniversalSDK.xcframework'
   
-    core.dependency 'AFNetworking/NSURLSession', '~> 3'
+    core.dependency 'AFNetworking/NSURLSession', '~> 4'
     core.dependency 'MMWormhole/Core', '~> 2.0.0'
     core.dependency 'libPhoneNumber-iOS', '0.9.13'
     core.dependency 'FormatterKit/LocationFormatter', '~> 1.8'
