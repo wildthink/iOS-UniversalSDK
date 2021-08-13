@@ -29,14 +29,16 @@ s.version='2.6.0'
   
   s.subspec 'AdvancedAnnotations' do |aa|
     aa.vendored_frameworks = 'AdvancedAnnotations.xcframework'
-
     aa.dependency 'SVGgh', '~> 1.11'
   end
 
   s.subspec 'Core' do |core|
     core.vendored_frameworks = 'LSUniversalSDK.xcframework'
   
-    core.dependency 'AFNetworking/NSURLSession', '~> 3'
+    core.ios.pod_target_xcconfig = { 'ONLY_ACTIVE_ACH' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+    core.ios.user_target_xcconfig = { 'ONLY_ACTIVE_ACH' => 'YES', 'EXCLUDED_ARCHS[sdk=iphonesimulator*]' => 'arm64' }
+
+    core.dependency 'AFNetworking/NSURLSession', '~> 4'
     core.dependency 'MMWormhole/Core', '~> 2.0.0'
     core.dependency 'libPhoneNumber-iOS', '0.9.13'
     core.dependency 'FormatterKit/LocationFormatter', '~> 1.8'
@@ -49,3 +51,5 @@ s.version='2.6.0'
     core.dependency 'MaterialComponents/ActivityIndicator', '~> 104.0'
   end
 end
+  
+  
