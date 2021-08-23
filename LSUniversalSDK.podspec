@@ -2,7 +2,7 @@ Pod::Spec.new do |s|
     s.name             = 'LSUniversalSDK'
     s.homepage         = 'https://github.com/sightcall/iOS-UniversalSDK'
     s.author           = { 'sightcall' => 'developer@sightcall.com' }
-s.version='2.6.0'
+s.version='2.6.2'
     s.source           = { :http => "https://sightcall-ios-cocoapods.s3.amazonaws.com/universalSDK/#{s.version}/sdk.zip" }
     s.documentation_url = 'https://github.com/sightcall/iOS-Documentation/blob/main/README.md'
     s.swift_version    = '5.3.1'
