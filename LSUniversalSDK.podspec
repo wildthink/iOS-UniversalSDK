@@ -7,7 +7,7 @@ s.version='2.6.2'
     s.documentation_url = 'https://github.com/sightcall/iOS-Documentation/blob/main/README.md'
     s.swift_version    = '5.3.1'
     s.platform         = :ios
-    s.ios.deployment_target = '14.0'
+    s.ios.deployment_target = '9.0'
 
     s.summary          = 'The SDK to integrate SightCall services into your iOS and iPadOS applications'
     s.description      = <<-DESC
